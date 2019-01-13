@@ -1,6 +1,6 @@
 <!-- Footer
 		============================================= -->
-<footer id="footer" class="noborder" style="background-color: #FFF">
+<footer id="footer" class="footer-top-border" style="background-color: #FFF">
 
     <div class="container clearfix">
 
@@ -25,11 +25,10 @@
                     <div class="widget widget_links clearfix">
                         <h4>Infos</h4>
                         <ul>
-                            <li><a href="#">Über Uns</a></li>
-                            <li><a href="#">Häufige Fragen</a></li>
-                            <li><a href="#">Downloads</a></li>
-                            <li><a href="#">Öffnungszeiten</a></li>
-                            <li><a href="#">Anfahrt</a></li>
+                            <li><a href="{{ url('/contact')}}">Kontakt</a></li>
+                            <li><a href="{{ url('/faq')}}">Häufige Fragen</a></li>
+                            <li><a href="{{ url('/about#opening')}}">Öffnungszeiten</a></li>
+                            <li><a href="{{ url('/about#anfahrt')}}">Anfahrt</a></li>
                         </ul>
                     </div>
                 </div>
@@ -38,7 +37,7 @@
                         <h4>Shop</h4>
                         <ul>
                             <li><a href="#">Shop</a></li>
-                            <li><a href="#">AGB</a></li>
+                            <li><a href="{{ url('/agb')}}">AGB</a></li>
                             <li><a href="#">Lieferbedingungen</a></li>
                             <li><a href="#">Widerrufsbelehrung</a></li>
                         </ul>
@@ -48,9 +47,9 @@
                     <div class="widget widget_links clearfix">
                         <h4>Datenschutz</h4>
                         <ul>
-                            <li><a href="#">Datenschutz</a></li>
-                            <li><a href="#">Impressum</a></li>
-                            <li><a href="#">AGB</a></li>
+                            <li><a href="{{ url('/datenschutz')}}">Datenschutz</a></li>
+                            <li><a href="{{ url('/impressum')}}">Impressum</a></li>
+                            <li><a href="{{ url('/agb')}}">AGB</a></li>
                         </ul>
                     </div>
                 </div>
@@ -61,17 +60,12 @@
                 </div>
                 <div class="col_one_third col_last">
                     <div class="fright clearfix">
-                        <a href="#" class="social-icon si-mini si-rounded si-colored si-facebook">
+                        <a href="https://de-de.facebook.com/fahrwerk.kult/" class="social-icon si-mini si-rounded si-colored si-facebook">
                             <i class="icon-facebook"></i>
                             <i class="icon-facebook"></i>
                         </a>
 
-                        <a href="#" class="social-icon si-mini si-rounded si-colored si-twitter">
-                            <i class="icon-twitter"></i>
-                            <i class="icon-twitter"></i>
-                        </a>
-
-                        <a href="#" class="social-icon si-mini si-rounded si-colored si-instagram">
+                        <a href="https://www.instagram.com/fahrwerk.kart.golf/" class="social-icon si-mini si-rounded si-colored si-instagram">
                             <i class="icon-instagram"></i>
                             <i class="icon-instagram"></i>
                         </a>

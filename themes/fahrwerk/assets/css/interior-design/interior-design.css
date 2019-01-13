@@ -46,7 +46,6 @@
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	cursor: pointer;
 }
 
 .story-box .story-box-image {
@@ -108,7 +107,7 @@
 
 .story-box .story-box-info .story-box-content a {
 	font-size: 16px;
-	text-decoration: underline !important;
+	text-decoration: none !important;
 }
 
 /* ----- Story-Box Responsive ----- */
@@ -204,7 +203,7 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a:after {
 	width: 80px;
 	height: 2px;
 	bottom: 0;
-	left: 34%;
+	left: 25%;
 	margin-left: -3px;
 	background: #1c85e8;
 }

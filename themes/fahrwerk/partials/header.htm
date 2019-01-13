@@ -11,8 +11,9 @@
             <div class="top-links">
                 <ul>
                     <li><a href="https://de-de.facebook.com/fahrwerk.kult/" target="_blank"><i class="icon-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/fahrwerk.kart.golf/" target="_blank"><i class="icon-instagram"></i></a></li>
                     <li class="d-md-none d-lg-block"><a href="#"><i class="icon-call"></i> 06071-951122</a></li>
-                    <li><a href="mailto:fahrwerk@fahrwerk.de"><i class="icon-email"></i></a></li>
+                    <li><a href="mailto:fahrwerk@fahrwerk.de"><i class="icon-email3"></i></a></li>
                     <li><a href="mailto:fahrwerk@fahrwerk.de"><i class="icon-cart"></i></a></li>
                 </ul>
             </div><!-- .top-links end -->
@@ -42,16 +43,16 @@
                     <li><a href="#"><div>Kart</div></a>
                         <ul>
                             <li><a href="{{ url('/indoor')}}"><div>Indoor</div></a></li>
-                            <li><a href="#"><div>Outdoor</div></a></li>
-                            <li><a href="#"><div>Kids</div></a></li>
+                            <li><a href="{{ url('/outdoor')}}"><div>Outdoor</div></a></li>
+                            <li><a href="{{ url('/kids')}}"><div>Kids</div></a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><div>Golf</div></a></li>
-                    <li><a href="#"><div>Jahreskalender</div></a></li>
+                    <li><a href="{{ url('/golf')}}"><div>Golf</div></a></li>
+                    <li><a href="{{ url('/kalendar')}}"><div>Jahreskalender</div></a></li>
                     <li><a href="#"><div>Events</div></a>
                         <ul>
-                            <li><a href="#"><div>Catering</div></a></li>
-                            <li><a href="#"><div>Veranstaltungen</div></a></li>
+                            <li><a href="{{ url('/catering')}}"><div>Catering</div></a></li>
+                            <li><a href="{{ url('/events')}}"><div>Veranstaltungen</div></a></li>
                             <li><a href="#"><div>Räume</div></a></li>
                         </ul>
                     </li>
