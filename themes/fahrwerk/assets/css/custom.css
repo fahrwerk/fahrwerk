@@ -11,9 +11,20 @@
   }
 }
 
+@media only screen and (max-width: 480px) {
+}
+
 @media only screen and (min-width: 1500px) {
     .menu-schriftgroeße-desktop {
         font-size: 1.4em !important;
+    }
+    #padding-anpassung-1
+    {
+        padding: 100px 60px !important;
+    }
+    #padding-anpassung
+    {
+        padding: 100px 60px !important;
     }
 }
 
