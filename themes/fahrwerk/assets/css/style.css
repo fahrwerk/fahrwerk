@@ -163,7 +163,7 @@ dl, dt, dd, ol, ul, li {
 
 body {
 	line-height: 1.5;
-	color: #555;
+	color: white;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -192,7 +192,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #444;
+	color: #ffd918;
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 30px 0;
@@ -6552,7 +6552,7 @@ body:not(.device-sm):not(.device-xs) .countdown.countdown-large.coming-soon .cou
 	height: 40px;
 	line-height: 40px;
 	background-color: #1ABC9C;
-	color: #FFF;
+	color: #171a1a;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -9124,7 +9124,7 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a {
 
 .tabs.tabs-alt ul.tab-nav li:first-child { border-left: 0; }
 
-.tabs.tabs-alt ul.tab-nav li a { background-color: #FFF; }
+.tabs.tabs-alt ul.tab-nav li a { background-color: #171a1a; }
 
 .tabs.tabs-alt ul.tab-nav li.ui-tabs-active a {
 	border: 1px solid #DDD;
@@ -10933,7 +10933,7 @@ label {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #555;
+	color: white;
 	margin-bottom: 10px;
 	cursor: pointer;
 }
@@ -11119,7 +11119,7 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #333;
+	color: white;
 }
 
 .emphasis-title h1,
@@ -12103,7 +12103,7 @@ body:not(.device-touch) .tagcloud a {
 .widget_categories li a:hover,
 .widget_pages li a:hover,
 .widget_rss li a:hover,
-.widget_recent_comments li a:hover { color: #000; }
+.widget_recent_comments li a:hover { color: #ffd918; }
 
 .widget_recent_comments li a {
 	display: inline;
@@ -12429,7 +12429,7 @@ body:not(.device-touch) .tagcloud a {
 .page-link:focus { color: #1ABC9C; }
 
 .btn-link:hover,
-.btn-link:focus { color: #222; }
+.btn-link:focus { color: white; }
 
 .boot-tabs { margin-bottom: 20px !important; }
 

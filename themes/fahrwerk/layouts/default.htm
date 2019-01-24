@@ -33,6 +33,7 @@ description = "Default layout"
     <link rel="stylesheet" href="{{ 'assets/css/app-landing/app-landing.css'|theme }}" type="text/css" />
     <link rel="stylesheet" href="{{ 'assets/css/articles/articles.css'|theme }}" type="text/css" />
     <link rel="stylesheet" href="{{ 'assets/css/barber/barber.css'|theme }}" type="text/css" />
+    <link rel="stylesheet" href="{{ 'assets/css/car.css'|theme }}" type="text/css" />
 
     <link rel="stylesheet" href="{{ 'assets/css/interior-design/css/fonts.css'|theme }}" type="text/css" />
 
@@ -64,6 +65,75 @@ description = "Default layout"
 
 <body class="stretched side-push-panel no-transition">
 
+    <!-- Side Panel -->
+    <div id="side-panel" class="secondary-color-background">
+
+        <div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a></div>
+
+        <div class="side-panel-wrap">
+
+            <div class="widget clearfix">
+
+                <a href="{{ url('/')}}"><img src="{{ 'assets/images/fahrwerk-logo-02.svg'|theme }}" alt="Canvas Logo" height="50"></a>
+
+                <!-- Sidebar
+            ============================================= -->
+                <div class="sidebar col_last topmargin-sm" style="width: 100%">
+
+                    <address class="text-white">
+                        <strong>Anschschriften:</strong><br><br>
+                        FAHR•WERK KARTBAHN GMBH<br>
+                        Waldstraße 79 L<br>
+                        64846 Groß-Zimmern<br><br>
+                        OUTDOOR-STRECKE ODENWALDRING<br>
+                        Eichenweg 80<br>
+                        64850 Schaafheim<br>
+                    </address>
+
+                </div><!-- .sidebar end -->
+
+                <div class="widget quick-contact-widget noborder notoppadding clearfix">
+
+                    <div class="quick-contact-form-result"></div>
+                    <div class="bottommargin-sm">
+
+                        <abbr title="Phone Number" class="text-white"><strong>Telefon:</strong></abbr> <a href="tel:06071-951122" class="text-white">+49(0) 6071-951122 </a><br>
+                        <abbr title="Email Address" class="text-white"><strong>Email:</strong></abbr> <a href="mailto:info@fahrwerk.de" class="text-white">info@fahrwerk.de</a>
+
+                    </div>
+                    <h3>Kontaktier uns</h3>
+                    <form id="quick-contact-form" name="quick-contact-form" action="include/quickcontact.php" method="post" class="quick-contact-form nobottommargin">
+                        <div class="form-process"></div>
+                        <input type="text" class="required sm-form-control input-block-level" id="quick-contact-form-name" name="quick-contact-form-name" value="" placeholder="Nachname, Vorname" />
+                        <input type="text" class="required sm-form-control email input-block-level" id="quick-contact-form-email" name="quick-contact-form-email" value="" placeholder="Email" />
+                        <textarea class="required sm-form-control input-block-level short-textarea" id="quick-contact-form-message" name="quick-contact-form-message" rows="4" cols="30" placeholder="Nachricht"></textarea>
+                        <input type="text" class="hidden" id="quick-contact-form-botcheck" name="quick-contact-form-botcheck" value="" />
+                        <button type="submit" id="quick-contact-form-submit" name="quick-contact-form-submit" class="button button-small button-3d nomargin" value="submit">Email versenden</button>
+                    </form>
+
+                </div>
+
+                <div class="widget noborder notoppadding">
+
+                    <a href="https://de-de.facebook.com/fahrwerk.kult/" class="social-icon si-small si-dark si-facebook">
+                        <i class="icon-facebook"></i>
+                        <i class="icon-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/fahrwerk.kart.golf/" class="social-icon si-small si-dark si-twitter">
+                        <i class="icon-twitter"></i>
+                        <i class="icon-twitter"></i>
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
 
 <div id="wrapper" class="clearfix">
 
@@ -79,6 +149,10 @@ description = "Default layout"
 <!-- Go To Top
 	============================================= -->
     <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- Contact Button
+    ============================================= -->
+    <div id="contact-me" class="icon-line-mail side-panel-trigger primary-color"></div>
 
     <!-- External JavaScripts
     ============================================= -->
@@ -145,6 +219,48 @@ description = "Default layout"
                 768: { items: 2 },
                 1200: { stagePadding: 200 }
             },
+        });
+    </script>
+
+    <script>
+        jQuery(document).ready( function($){
+
+            /* Pricing Switcher */
+            function pricingSwitcher( elementCheck, elementParent, elementPricing ) {
+                elementParent.find('.pts-left,.pts-right').removeClass('pts-switch-active');
+                elementPricing.find('.pts-switch-content-left,.pts-switch-content-right').addClass('hidden');
+
+                if( elementCheck.filter(':checked').length > 0 ) {
+                    elementParent.find('.pts-right').addClass('pts-switch-active');
+                    elementPricing.find('.pts-switch-content-right').removeClass('hidden');
+                } else {
+                    elementParent.find('.pts-left').addClass('pts-switch-active');
+                    elementPricing.find('.pts-switch-content-left').removeClass('hidden');
+                }
+            }
+
+            $('.pts-switcher').each( function(){
+                var element = $(this),
+                    elementCheck = element.find(':checkbox'),
+                    elementParent = $(this).parents('.pricing-tenure-switcher'),
+                    elementPricing = $( elementParent.attr('data-container') );
+
+                pricingSwitcher( elementCheck, elementParent, elementPricing );
+
+                elementCheck.on( 'change', function(){
+                    pricingSwitcher( elementCheck, elementParent, elementPricing );
+                });
+            });
+
+            $('[data-pricing-plan]').click( function(){
+                getStartedForm.find('#get-started-form-package').val( $(this).attr('data-pricing-plan') );
+                getStartedForm.find('#modal-get-started-package').html( $(this).attr('data-pricing-plan') );
+            });
+
+        });
+
+        jQuery(window).on( 'load', function(){
+            $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
         });
     </script>
 
