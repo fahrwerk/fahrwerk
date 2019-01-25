@@ -9,6 +9,10 @@
   .img-groesse {
 	  max-width: 20% !important;
   }
+    .kein-float
+    {
+        float: none !important;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -25,6 +29,28 @@
     #padding-anpassung
     {
         padding: 100px 60px !important;
+    }
+
+    .header-icons-tel
+    {
+        background-color: #171a1a;
+    }
+
+    .header-icons-tel:hover
+    {
+        background-color: transparent;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .header-icons-tel
+    {
+        background-color: #171a1a;
+    }
+
+    .header-icons-tel:hover
+    {
+        background-color: transparent;
     }
 }
 
@@ -46,6 +72,26 @@
 .primary-color-background
 {
     background-color: #ffd918 !important;
+}
+
+.header-icons
+{
+    background-color: #3C5A99;
+}
+
+.header-icons:hover
+{
+    background-color: transparent;
+}
+
+.header-icons-insta
+{
+    background-color: #e95950;
+}
+
+.header-icons-insta:hover
+{
+    background-color: transparent;
 }
 
 .white-background
