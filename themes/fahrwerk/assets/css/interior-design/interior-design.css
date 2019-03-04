@@ -72,8 +72,8 @@
 .story-box .story-box-info {
 	box-sizing: border-box;
 	width: 50%;
-	height: 430px;
-	padding: 60px;
+	height: 450px;
+	padding: 30px;
 	margin: 35px 0 0 -20%;
 	background: #171a1a;
 	z-index: 4;

@@ -2,7 +2,7 @@
 ============================================= -->
 <div id="top-bar" class="transparent-topbar" style="border-bottom: 1px solid white">
 
-    <div class="container clearfix">
+    <div class="clearfix">
 
         <div class="col_half fright col_last clearfix nobottommargin">
 
@@ -28,11 +28,11 @@
 
     <div id="header-wrap">
 
-        <div class="container clearfix">
+        <div class="clearfix">
 
             <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-            <div id="logo">
+            <div id="logo" class="logo-groeße">
                 <a href="/" style="max-width: 70%" data-dark-logo="{{ 'assets/images/fahrwerk-logo-02.svg'|theme }}" class="standard-logo"><img src="{{ 'assets/images/fahrwerk-logo-02.svg'|theme }}" alt="Fahrwerk Logo"></a>
                 <a href="/" data-dark-logo="{{ 'assets/images/fahrwerk-logo-02.svg'|theme }}" class="retina-logo"><img src="{{ 'assets/images/fahrwerk-logo-02.svg'|theme }}" alt="Fahrwerk Logo"></a>
             </div>
@@ -40,26 +40,21 @@
             <nav id="primary-menu" class="with-arrows">
 
                 <ul>
-                    <li><a class="menu-schriftgroeße-desktop" href="#"><div>AKTIVITÄTEN</div></a>
-                        <ul>
-                            <li><a  href="{{ url('/indoor')}}"><div>INDOOR</div></a></li>
-                            <li><a  href="{{ url('/outdoor')}}"><div>OUTDOOR</div></a></li>
-                            <li><a  href="{{ url('/kids')}}"><div>KIDS</div></a></li>
-                            <li><a  href="{{ url('/golf')}}"><div>ADVENTURE-GOLF</div></a></li>
-                            <li><a  href="{{ url('/birthday')}}"><div>KINDERGEBURTSTAGE</div></a></li>
-                        </ul>
-                    </li>
-                    <li><a class="menu-schriftgroeße-desktop" href="{{ url('/burger')}}"><div>DINER</div></a></li>
-                    <li><a class="menu-schriftgroeße-desktop" href="#"><div>BUSINESS</div></a>
-                        <ul>
-                            <li><a  href="{{ url('/rooms')}}"><div>RÄUME</div></a></li>
-                            <li><a  href="{{ url('/catering')}}"><div>CATERING</div></a></li>
-                            <li><a  href="{{ url('/privat')}}"><div>PRIVAT EVENTS</div></a></li>
-                            <li><a  href="{{ url('/company')}}"><div>FIRMEN EVENTS</div></a></li>
-                        </ul>
-                    </li>
+                        <li><a class="menu-schriftgroeße-desktop" href="{{ url('/indoor')}}"><div>INDOOR</div></a></li>
+                        <li><a class="menu-schriftgroeße-desktop" href="{{ url('/outdoor')}}"><div>OUTDOOR</div></a></li>
+                        <li><a class="menu-schriftgroeße-desktop" href="{{ url('/kids')}}"><div>KIDS</div></a></li>
+                        <li><a class="menu-schriftgroeße-desktop" href="{{ url('/golf')}}"><div>ADVENTURE-GOLF</div></a></li>
+                        <li><a class="menu-schriftgroeße-desktop" href="{{ url('/burger')}}"><div>DINER</div></a></li>
+                        <li><a class="menu-schriftgroeße-desktop" href="#"><div>BUSINESS</div></a>
+                            <ul>
+                                <li><a  href="{{ url('/rooms')}}"><div>RÄUME</div></a></li>
+                                <li><a  href="{{ url('/catering')}}"><div>CATERING</div></a></li>
+                                <li><a  href="{{ url('/privat')}}"><div>PRIVAT EVENTS</div></a></li>
+                                <li><a  href="{{ url('/company')}}"><div>FIRMEN EVENTS</div></a></li>
+                            </ul>
+                        </li>
                     <li><a class="menu-schriftgroeße-desktop" href="{{ url('/contact')}}"><div>KONTAKT</div></a></li>
-                    <li><a class="menu-schriftgroeße-desktop" href="{{ url('/contact')}}"><div>SHOP</div></a></li>
+                    <li><a class="menu-schriftgroeße-desktop" href="{{ url('/contact')}}"><div>SHOP/Gutschein</div></a></li>
                 </ul>
 
             </nav><!-- #primary-menu end -->
