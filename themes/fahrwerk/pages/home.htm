@@ -3,57 +3,26 @@ url = "/"
 layout = "default"
 ==
 
-<section id="slider" class="slider-element force-full-screen full-screen dark clearfix">
-
-    <div class="force-full-screen full-screen">
-        <div class="fslider" data-speed="2000" data-pause="3500" data-animation="fade" data-arrows="false" data-pagi="false" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: #333; z-index: 1;">
-            <div class="flexslider" style="height: 100% !important;">
-                <div class="slider-wrap" style="height: inherit;">
-                    <div class="slide" style="background: url({{ 'assets/images/Fahrwerk_Probeshooting_2904.jpg'|theme }}) center center; background-size: cover; height: 100% !important;"></div>
-                    <div class="slide" style="background: url({{ 'assets/images/Fahrwerk_Indoor7.jpg'|theme }}) center center; background-size: cover; height: 100% !important;"></div>
-                    <div class="slide" style="background: url({{ 'assets/images/Fahrwerk_Indoor4.jpg'|theme }}) center center; background-size: cover; height: 100% !important;"></div>
-                </div>
-            </div>
-        </div>
-        <div class="vertical-middle" style="z-index: 3;">
-            <div class="container center clearfix">
-                <div class="emphasis-title nomargin">
-                    <h1>FAHR•WERK</h1>
-                    <span class="t300 uppercase" style="font-size: 18px; letter-spacing: 10px; color: rgba(255,255,255,0.9);">Erlebe deine beste Zeit.</span>
-                </div>
-            </div>
-        </div>
-        <div class="video-wrap" style="position: absolute; top: 0; left: 0; height: 100%; z-index:1;">
-            <div class="video-overlay real-estate-video-overlay" style="z-index: 1;"></div>
-        </div>
-    </div>
-
-    <a href="#" class="scroll-down d-none d-lg-block" data-scrollto="#content" data-offset="80">
-        <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
-    </a>
-
-</section>
-
 <section id="content" class="secondary-color-background">
 
-    <div class="content-wrap notoppadding clearfix" style="padding-bottom: 0px">
+    <div class="content-wrap notoppadding clearfix" style="padding-bottom: 0px ;background-color: #171a1a;">
 
-        <div id="home" class="container topmargin-lg clearfix">
+        <div id="home" class="container clearfix">
 
             <div class="divcenter" style="max-width: 960px">
-                <div class="heading-block center nobottomborder">
-                    <h2 class="ls2 t700">Für jeden was dabei</h2>
-                    <span>Erlebe deine beste Zeit</span>
+                <div class="heading-block center nobottomborder topmargin-sm">
+                    <a href="{{ url('/')}}"><img class="img-groesse-logo" style="width: 50%" src="{{ 'assets/images/fahrwerk-logo-02.svg'|theme }}" alt="Fahrwerk Logo"></a>
+                    <span style="color: white !important; font-size: 1.1rem !important;">Erlebe deine beste Zeit</span>
                 </div>
                 <div class="tabs tabs-alt tabs-responsive tabs-justify clearfix" id="tab">
 
-                    <ul class="tab-nav clearfix">
+                    <ul class="tab-nav clearfix" style="background-color: #171a1a">
                         <li><a href="#tabs-1"><img class="img-groesse" style="max-width: 88%" src="{{ 'assets/images/fahrwerk_icon_karting.png'|theme }}" />INDOOR KARTING</a></li>
                         <li><a href="#tabs-2"><img class="img-groesse" style="max-width: 88%" src="{{ 'assets/images/fahrwerk_icon_karting_kids.png'|theme }}" />OUTDOOR KARTING</a></li>
                         <li><a href="#tabs-3"><img class="img-groesse" style="max-width: 88%" src="{{ 'assets/images/fahrwerk_icon_kidsschulung.png'|theme }}" />KIDS RACING</a></li>
                         <li><a href="#tabs-4"><img class="img-groesse" style="max-width: 88%" src="{{ 'assets/images/fahrwerk_icon_golf.png'|theme }}" />ADVENTURE GOLF</a></li>
                         <li><a href="#tabs-5"><img class="img-groesse" style="max-width: 88%" src="{{ 'assets/images/fahrwerk_icon_golf.png'|theme }}" />BURGERWERK</a></li>
-                        <li><a style="cursor: pointer" onclick="window.location.href='/events-choice#events'"><img class="img-groesse" style="max-width: 88%" src="{{ 'assets/images/fahrwerk_icon_kidsschulung.png'|theme }}" />BUISNESS</a></li>
+                        <li><a style="cursor: pointer" onclick="window.location.href='/events-choice#events'"><img class="img-groesse" style="max-width: 88%" src="{{ 'assets/images/fahrwerk_icon_kidsschulung.png'|theme }}" />BUSINESS</a></li>
                     </ul>
 
                     <div class="tab-container content-test">
@@ -69,14 +38,14 @@ layout = "default"
 
                                             <div class="col-md-6" style="float: left; padding-left: 0px">
 
-                                                <h3 class="t400 ls0 nott">Einzelfahrt</h3>
+                                                <h3 class="t400 ls0 nott">EINZELFAHRT</h3>
                                                 <p ><strong class="primary-color">Qualifiying + Rennen:</strong> <br>30 Minuten 37,50 €<br> <strong class="primary-color">Qualifiying + Rennen:</strong> <br>60 Minuten 65,00 €</p>
 
                                             </div>
 
                                             <div class="col-md-6 nomargin menu-home" style="float: left;padding-right: 0px">
 
-                                                <h3 class="t400 ls0 nott">Gruppenfahrt</h3>
+                                                <h3 class="t400 ls0 nott">GRUPPENFAHRT</h3>
                                                 <p > <strong class="primary-color">14 Personen buchen:</strong><br>nur 13 bezahlen!<br>
                                                     <strong class="primary-color">5 Personen buchen:</strong><br>p.P. 1,50€ sparen!*</p>
 
@@ -85,18 +54,19 @@ layout = "default"
                                         </div>
 
                                         <div class="col-md-10" style="clear: both">
-                                                <span><strong style="color: red">Wichtig: Buchung erforderlich!</strong></span>
+                                            <span><strong style="color: red">Wichtig: Buchung erforderlich!</strong></span>
 
-                                                <ul style="list-style-type:none">
-                                                    <li><strong>Montag - Dienstag:  auf Anfrage</strong></li>
-                                                    <li><strong>Mittwoch - Freitag:  ab 18:00 Uhr</strong></li>
-                                                    <li><strong>Samstag:  ab 16:00 Uhr</strong></li>
-                                                    <li><strong>Sonntag:  ab 12:00 Uhr</strong></li>
-                                                </ul>
+                                            <ul style="list-style-type:none">
+                                                <li><strong>Montag - Dienstag:  auf Anfrage</strong></li>
+                                                <li><strong>Mittwoch - Freitag:  ab 18:00 Uhr</strong></li>
+                                                <li><strong>Samstag:  ab 16:00 Uhr</strong></li>
+                                                <li><strong>Sonntag:  ab 12:00 Uhr</strong></li>
+                                            </ul>
                                         </div>
-                                        <div class="col-md-10">
+                                        <div class="col-md-12">
 
-                                            <a href="{{ url('/indoor#indoor')}}" class="t300 button noleftmargin button-rounded a-tag-ohne-unterstrich float-left kein-float">Mehr Erfahren</a>
+                                            <div class="col_half"><a href="{{ url('/indoor#indoor')}}" class="t300 button noleftmargin button-rounded a-tag-ohne-unterstrich ">Mehr Erfahren</a></div>
+                                            <div class="col_half col_last"><a href="{{ url('/contact')}}" class="t300 button noleftmargin button-rounded a-tag-ohne-unterstrich" style="background-color: white">Anfrage stellen!</a></div>
 
                                         </div>
                                     </div>
@@ -114,14 +84,14 @@ layout = "default"
 
                                             <div class="col-md-6" style="float: left; padding-left: 0px">
 
-                                                <h3 class="t400 ls0 nott">Einzelfahrt</h3>
+                                                <h3 class="t400 ls0 nott">EINZELFAHRT</h3>
                                                 <p ><strong class="primary-color">Qualifiying + Rennen:</strong> <br>30 Minuten 37,50 €<br> <strong class="primary-color">Qualifiying + Rennen:</strong> <br>60 Minuten 65,00 €</p>
 
                                             </div>
 
                                             <div class="col-md-6 nomargin menu-home" style="float: left;padding-right: 0px">
 
-                                                <h3 class="t400 ls0 nott">Gruppenfahrt</h3>
+                                                <h3 class="t400 ls0 nott">GRUPPENFAHRT</h3>
                                                 <p > <strong class="primary-color">14 Personen buchen:</strong><br>nur 13 bezahlen!<br>
                                                     <strong class="primary-color">5 Personen buchen:</strong><br>p.P. 1,50€ sparen!*</p>
 
@@ -138,9 +108,10 @@ layout = "default"
                                                 <li><strong>Sonntag:  13:00 - 21:30 Uhr</strong></li>
                                             </ul>
                                         </div>
-                                        <div class="col-md-10">
+                                        <div class="col-md-12">
 
-                                            <a href="{{ url('/outdoor#outdoor')}}" class="t300 button noleftmargin button-rounded a-tag-ohne-unterstrich float-left kein-float">Mehr Erfahren</a>
+                                            <div class="col_half"><a href="{{ url('/outdoor#outdoor')}}" class="t300 button noleftmargin button-rounded a-tag-ohne-unterstrich ">Mehr Erfahren</a></div>
+                                            <div class="col_half col_last"><a href="{{ url('/contact')}}" class="t300 button noleftmargin button-rounded a-tag-ohne-unterstrich" style="background-color: white">Anfrage stellen!</a></div>
 
                                         </div>
                                     </div>
@@ -158,7 +129,7 @@ layout = "default"
 
                                             <div class="col-md-6" style="float: left; padding-left: 0px">
 
-                                                <h3 class="t400 ls0 nott">Einzelfahrt</h3>
+                                                <h3 class="t400 ls0 nott">EINZELFAHRT</h3>
                                                 <p ><strong class="primary-color">Kids Schulung:</strong> 55€<br> <strong class="primary-color">Kids Time:</strong> 15-19€
                                                     <br><strong class="primary-color">Family Time:</strong> 19€ <br><strong class="primary-color">Freies Training:</strong> 19€</p>
 
@@ -166,7 +137,7 @@ layout = "default"
 
                                             <div class="col-md-6 nomargin menu-home" style="float: left;padding-right: 0px">
 
-                                                <h3 class="t400 ls0 nott">Kindergeburtstag</h3>
+                                                <h3 class="t400 ls0 nott">GEBURTSTAG</h3>
                                                 <p > <strong class="primary-color">Karting:</strong> 425,00€<br></p>
 
                                             </div>
@@ -181,9 +152,10 @@ layout = "default"
                                                 <li><strong>Sonntag: Freies Training:            14:00-16:00 Uhr</strong></li>
                                             </ul>
                                         </div>
-                                        <div class="col-md-10">
+                                        <div class="col-md-12">
 
-                                            <a href="{{ url('/kids#kids')}}" class="t300 button noleftmargin button-rounded a-tag-ohne-unterstrich float-left kein-float">Mehr Erfahren</a>
+                                            <div class="col_half"><a href="{{ url('/kids#kids')}}" class="t300 button noleftmargin button-rounded a-tag-ohne-unterstrich ">Mehr Erfahren</a></div>
+                                            <div class="col_half col_last"><a href="{{ url('/contact')}}" class="t300 button noleftmargin button-rounded a-tag-ohne-unterstrich" style="background-color: white">Anfrage stellen!</a></div>
 
                                         </div>
                                     </div>
@@ -201,7 +173,7 @@ layout = "default"
 
                                             <div class="col-md-6" style="float: left; padding-left: 0px">
 
-                                                <h3 class="t400 ls0 nott">Einzelfahrt</h3>
+                                                <h3 class="t400 ls0 nott">EINZELFAHRT</h3>
                                                 <p ><strong class="primary-color">Erwachsene:</strong> 7,50€<br> <strong class="primary-color">Kinder bis 12 Jahre:</strong> 4,50€
                                                     <br><strong class="primary-color">Schüler & Studenten:</strong> 5,50€</p>
 
@@ -209,7 +181,7 @@ layout = "default"
 
                                             <div class="col-md-6 nomargin menu-home" style="float: left;padding-right: 0px">
 
-                                                <h3 class="t400 ls0 nott">Gruppentarife</h3>
+                                                <h3 class="t400 ls0 nott">GRUPPENTARIF</h3>
                                                 <p > <strong class="primary-color">Familienkarte (2 Erw. + 2.Kinder:</strong> 26€ , 22€<br>
                                                     <br><strong class="primary-color">Gruppenkarte(10 Personen):</strong> 55€<br></p>
 
@@ -227,9 +199,10 @@ layout = "default"
                                                 <li><strong>Sonntag:  10:00 - 20:00 Uhr</strong></li>
                                             </ul>
                                         </div>
-                                        <div class="col-md-10">
+                                        <div class="col-md-12">
 
-                                            <a href="{{ url('/golf#golf')}}" class="t300 button noleftmargin button-rounded a-tag-ohne-unterstrich float-left kein-float">Mehr Erfahren</a>
+                                            <div class="col_half"><a href="{{ url('/golf#golf')}}" class="t300 button noleftmargin button-rounded a-tag-ohne-unterstrich ">Mehr Erfahren</a></div>
+                                            <div class="col_half col_last"><a href="{{ url('/contact')}}" class="t300 button noleftmargin button-rounded a-tag-ohne-unterstrich" style="background-color: white">Anfrage stellen!</a></div>
 
                                         </div>
                                     </div>
@@ -252,7 +225,7 @@ layout = "default"
                                             Geschmackserlebnis empfehlen wir unsere hausgemachte BURGER•WERK-Sauce.</p>
                                         <div class="col-md-12">
 
-                                            <a href="{{ url('/burger#burger')}}" class="t300 button noleftmargin button-rounded a-tag-ohne-unterstrich float-left kein-float">Mehr Erfahren</a>
+                                            <div class="col_half"><a href="{{ url('/burger#burger')}}" class="t300 button noleftmargin button-rounded a-tag-ohne-unterstrich ">Mehr Erfahren</a></div>
 
                                         </div>
                                     </div>
@@ -267,7 +240,7 @@ layout = "default"
 
         </div>
 
-        <div class="clearfix center divcenter topmargin-lg" style="max-width: 700px;">
+        <div class="clearfix center divcenter topmargin-lg bottommargin-sm" style="max-width: 700px;>
             <div class="subscribe-widget" data-loader="button">
                 <div class="widget-subscribe-form-result"></div>
                 <form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post" class="nobottommargin" data-animate="fadeInUp">
@@ -281,8 +254,22 @@ layout = "default"
             </div>
         </div>
 
-        <div class="clear"></div><div class="line nobottommargin"></div>
+        <div class="modal-on-load" data-target="#myModal1"></div>
+
+        <!-- Modal -->
+        <div class="modal1 mfp-hide subscribe-widget" id="myModal1">
+            <div class="block dark divcenter" data-height-xl="400">
+                <div style="padding: 40px;">
+                    <div class="widget-subscribe-form-result"></div>
+                    <form class="widget-subscribe-form2" action="include/subscribe.php" role="form" method="post" style="max-width: 400px; margin-top: 130px;">
+                        <img width="100%" src="{{ 'assets/images/fahrwerk-logo-02.svg'|theme }}" alt="Fahrwerk Logo">
+                        <h4 class="primary-color" style="margin-left: 23px">WILLKOMMEN ZU DEINER BESTEN ZEIT</h4>
+
+                    </form>
+                </div>
+            </div>
+        </div>
 
     </div>
 
-</section><!-- #content end -->
+</section>
